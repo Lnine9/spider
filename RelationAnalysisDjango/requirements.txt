@@ -1,0 +1,11 @@
+APScheduler==3.9.1
+cpca==0.5.5
+Django==3.0
+fitz==0.0.1.dev2
+jieba==0.42.1
+lxml==4.8.0
+numpy==1.22.2
+opencv_python==4.5.5.62
+paddleocr==2.4
+requests==2.27.1
+SQLAlchemy==1.4.31

@@ -1,0 +1,189 @@
+2022-02-28 08:15:57 [scrapy.utils.log] INFO: Scrapy 2.3.0 started (bot: BaseSpider)
+2022-02-28 08:15:57 [scrapy.utils.log] INFO: Versions: lxml 4.5.2.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.6.8 (default, Nov 16 2020, 16:55:22) - [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 3.1, Platform Linux-3.10.0-1160.24.1.el7.x86_64-x86_64-with-centos-7.9.2009-Core
+2022-02-28 08:15:57 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2022-02-28 08:15:57 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'BaseSpider',
+ 'DOWNLOAD_DELAY': 3,
+ 'DOWNLOAD_TIMEOUT': 120,
+ 'DUPEFILTER_CLASS': 'scrapy_redis.dupefilter.RFPDupeFilter',
+ 'LOG_FILE': 'logs/BASE_SPIDER/BASE_SPIDER/9693ec5a982b11ec954f00163e0383f6.log',
+ 'NEWSPIDER_MODULE': 'BaseSpider.spiders',
+ 'REDIRECT_ENABLED': False,
+ 'SCHEDULER': 'scrapy_redis.scheduler.Scheduler',
+ 'SPIDER_MODULES': ['BaseSpider.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, '
+               'like Gecko) Chrome/17.0.963.56 Safari/535.11'}
+2022-02-28 08:15:57 [scrapy.extensions.telnet] INFO: Telnet Password: 2b144f262d920526
+2022-02-28 08:15:57 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2022-02-28 08:15:57 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 172.26.52.92:8899
+2022-02-28 08:15:57 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/spider_list_query HTTP/1.1" 200 210
+2022-02-28 08:15:57 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/spider_await_query HTTP/1.1" 200 71
+2022-02-28 08:15:57 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/spider_await_status_query HTTP/1.1" 200 427
+2022-02-28 08:15:57 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/spider_model_query HTTP/1.1" 200 177
+2022-02-28 08:15:57 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/spider_init_query HTTP/1.1" 200 172
+2022-02-28 08:15:57 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/resolver_query HTTP/1.1" 200 1121
+2022-02-28 08:15:57 [BASE_SPIDER] INFO: Reading start URLs from redis key 'ZFZF_CompNegtt:LIST' (batch size: 16, encoding: utf-8
+2022-02-28 08:15:57 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['BaseSpider.middlewares.BasespiderDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-02-28 08:15:57 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-02-28 08:15:57 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-02-28 08:15:57 [scrapy.core.engine] INFO: Spider opened
+2022-02-28 08:15:57 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-02-28 08:15:57 [BASE_SPIDER] INFO: Spider opened: BASE_SPIDER
+2022-02-28 08:15:57 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-02-28 08:15:57 [BASE_SPIDER] DEBUG: Read 1 requests from 'ZFZF_CompNegtt:LIST'
+2022-02-28 08:16:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://search.ccgp.gov.cn/bxsearch?searchtype=1&timeType=6&bidType=10&page_index=1&start_time=2022%3A01%3A01&end_time=2022%3A02%3A28> (referer: None) ['partial']
+2022-02-28 08:16:01 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/sas_update_status HTTP/1.1" 200 15
+2022-02-28 08:16:01 [BASE_SPIDER] DEBUG: Read 16 requests from 'ZFZF_CompNegtt:HM'
+2022-02-28 08:16:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202202/t20220227_17624592.htm> (referer: None) ['partial']
+2022-02-28 08:16:01 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/uuid HTTP/1.1" 200 27
+2022-02-28 08:16:01 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_dict_to_sm HTTP/1.1" 200 62
+2022-02-28 08:16:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202202/t20220227_17624594.htm> (referer: None) ['partial']
+2022-02-28 08:16:05 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/uuid HTTP/1.1" 200 27
+2022-02-28 08:16:05 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_dict_to_sm HTTP/1.1" 200 62
+2022-02-28 08:16:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202202/t20220227_17624596.htm> (referer: None) ['partial']
+2022-02-28 08:16:06 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/uuid HTTP/1.1" 200 27
+2022-02-28 08:16:06 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_dict_to_sm HTTP/1.1" 200 62
+2022-02-28 08:16:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202202/t20220227_17624599.htm> (referer: None) ['partial']
+2022-02-28 08:16:08 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/uuid HTTP/1.1" 200 27
+2022-02-28 08:16:08 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_dict_to_sm HTTP/1.1" 200 62
+2022-02-28 08:16:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202202/t20220227_17624600.htm> (referer: None) ['partial']
+2022-02-28 08:16:09 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/uuid HTTP/1.1" 200 27
+2022-02-28 08:16:09 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_dict_to_sm HTTP/1.1" 200 62
+2022-02-28 08:16:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202202/t20220227_17624603.htm> (referer: None) ['partial']
+2022-02-28 08:16:12 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/uuid HTTP/1.1" 200 27
+2022-02-28 08:16:12 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_dict_to_sm HTTP/1.1" 200 62
+2022-02-28 08:16:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202202/t20220227_17624604.htm> (referer: None) ['partial']
+2022-02-28 08:16:15 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/uuid HTTP/1.1" 200 27
+2022-02-28 08:16:15 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_dict_to_sm HTTP/1.1" 200 62
+2022-02-28 08:16:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202202/t20220227_17624610.htm> (referer: None) ['partial']
+2022-02-28 08:16:17 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/uuid HTTP/1.1" 200 27
+2022-02-28 08:16:17 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_dict_to_sm HTTP/1.1" 200 62
+2022-02-28 08:16:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202202/t20220227_17624611.htm> (referer: None) ['partial']
+2022-02-28 08:16:20 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/uuid HTTP/1.1" 200 27
+2022-02-28 08:16:20 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_dict_to_sm HTTP/1.1" 200 62
+2022-02-28 08:16:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202202/t20220227_17624613.htm> (referer: None) ['partial']
+2022-02-28 08:16:23 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/uuid HTTP/1.1" 200 27
+2022-02-28 08:16:23 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_dict_to_sm HTTP/1.1" 200 62
+2022-02-28 08:16:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202202/t20220227_17624615.htm> (referer: None) ['partial']
+2022-02-28 08:16:25 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/uuid HTTP/1.1" 200 27
+2022-02-28 08:16:25 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_dict_to_sm HTTP/1.1" 200 62
+2022-02-28 08:16:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202202/t20220227_17624616.htm> (referer: None) ['partial']
+2022-02-28 08:16:28 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/uuid HTTP/1.1" 200 27
+2022-02-28 08:16:28 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_dict_to_sm HTTP/1.1" 200 62
+2022-02-28 08:16:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202202/t20220227_17624623.htm> (referer: None) ['partial']
+2022-02-28 08:16:30 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/uuid HTTP/1.1" 200 27
+2022-02-28 08:16:30 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_dict_to_sm HTTP/1.1" 200 62
+2022-02-28 08:16:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202202/t20220227_17624624.htm> (referer: None) ['partial']
+2022-02-28 08:16:33 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/uuid HTTP/1.1" 200 27
+2022-02-28 08:16:33 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_dict_to_sm HTTP/1.1" 200 62
+2022-02-28 08:16:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202202/t20220227_17624625.htm> (referer: None) ['partial']
+2022-02-28 08:16:36 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/uuid HTTP/1.1" 200 27
+2022-02-28 08:16:36 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_dict_to_sm HTTP/1.1" 200 62
+2022-02-28 08:16:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202202/t20220228_17624626.htm> (referer: None) ['partial']
+2022-02-28 08:16:37 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/uuid HTTP/1.1" 200 27
+2022-02-28 08:16:37 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_dict_to_sm HTTP/1.1" 200 62
+2022-02-28 08:16:37 [BASE_SPIDER] DEBUG: Read 4 requests from 'ZFZF_CompNegtt:HM'
+2022-02-28 08:16:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202202/t20220228_17624638.htm> (referer: None) ['partial']
+2022-02-28 08:16:40 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/uuid HTTP/1.1" 200 27
+2022-02-28 08:16:40 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_dict_to_sm HTTP/1.1" 200 64
+2022-02-28 08:16:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202202/t20220228_17624640.htm> (referer: None) ['partial']
+2022-02-28 08:16:43 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/uuid HTTP/1.1" 200 27
+2022-02-28 08:16:43 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_dict_to_sm HTTP/1.1" 200 64
+2022-02-28 08:16:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202202/t20220228_17624641.htm> (referer: None) ['partial']
+2022-02-28 08:16:45 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/uuid HTTP/1.1" 200 27
+2022-02-28 08:16:45 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_dict_to_sm HTTP/1.1" 200 64
+2022-02-28 08:16:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202202/t20220228_17624643.htm> (referer: None) ['partial']
+2022-02-28 08:16:47 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/uuid HTTP/1.1" 200 27
+2022-02-28 08:16:47 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_dict_to_sm HTTP/1.1" 200 64
+2022-02-28 08:16:47 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 172.26.52.92:8899
+2022-02-28 08:16:47 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/spider_list_query HTTP/1.1" 200 210
+2022-02-28 08:16:47 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/resolver_query HTTP/1.1" 200 299
+2022-02-28 08:16:47 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/sub_comp_query_by_parent HTTP/1.1" 200 432
+2022-02-28 08:16:49 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/chtml_query_by_spider_id HTTP/1.1" 200 91
+2022-02-28 08:16:49 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 172.26.52.92:8899
+2022-02-28 08:16:49 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 172.26.52.92:8899
+2022-02-28 08:16:49 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 172.26.52.92:8899
+2022-02-28 08:16:49 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 172.26.52.92:8899
+2022-02-28 08:16:49 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/chtml_query_by_id HTTP/1.1" 200 25965
+2022-02-28 08:16:49 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/chtml_query_by_id HTTP/1.1" 200 20259
+2022-02-28 08:16:49 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/chtml_query_by_id HTTP/1.1" 200 20460
+2022-02-28 08:16:49 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/chtml_query_by_id HTTP/1.1" 200 23349
+2022-02-28 08:16:49 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/rdr_query_object HTTP/1.1" 200 11
+2022-02-28 08:16:49 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/rdr_query_object HTTP/1.1" 200 11
+2022-02-28 08:16:49 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/rdr_query_object HTTP/1.1" 200 11
+2022-02-28 08:16:49 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/rdr_query_object HTTP/1.1" 200 11
+2022-02-28 08:16:49 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/chtml_update_section_neg HTTP/1.1" 200 15
+2022-02-28 08:16:49 [root] INFO: ThreadPoolExecutor-0_2 start resolve, response_id: 99530386372893335, an_type: CB_G
+2022-02-28 08:16:49 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/chtml_update_section_neg HTTP/1.1" 200 15
+2022-02-28 08:16:49 [root] INFO: ThreadPoolExecutor-0_3 start resolve, response_id: 99530386372893336, an_type: CB_G
+2022-02-28 08:16:49 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/chtml_update_section_neg HTTP/1.1" 200 15
+2022-02-28 08:16:49 [root] INFO: ThreadPoolExecutor-0_0 start resolve, response_id: 99530386372893333, an_type: CB_G
+2022-02-28 08:16:49 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/chtml_update_section_neg HTTP/1.1" 200 15
+2022-02-28 08:16:49 [root] INFO: ThreadPoolExecutor-0_1 start resolve, response_id: 99530386372893334, an_type: CB_G
+2022-02-28 08:16:55 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_an_to_db HTTP/1.1" 200 28
+2022-02-28 08:16:55 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_an_to_db HTTP/1.1" 200 28
+2022-02-28 08:16:55 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_an_to_db HTTP/1.1" 200 28
+2022-02-28 08:16:55 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_an_to_db HTTP/1.1" 200 28
+2022-02-28 08:16:55 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/resolver_query_by_id HTTP/1.1" 200 299
+2022-02-28 08:16:55 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/resolver_query_by_id HTTP/1.1" 200 299
+2022-02-28 08:16:55 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/resolver_query_by_id HTTP/1.1" 200 299
+2022-02-28 08:16:55 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/uuid HTTP/1.1" 200 27
+2022-02-28 08:16:55 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/uuid HTTP/1.1" 200 27
+2022-02-28 08:16:55 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/uuid HTTP/1.1" 200 27
+2022-02-28 08:16:55 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/resolver_query_by_id HTTP/1.1" 200 299
+2022-02-28 08:16:55 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_dict_to_sm HTTP/1.1" 200 64
+2022-02-28 08:16:55 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/uuid HTTP/1.1" 200 27
+2022-02-28 08:16:55 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_dict_to_sm HTTP/1.1" 200 64
+2022-02-28 08:16:55 [root] INFO: 1 resolve finished
+2022-02-28 08:16:55 [root] INFO: 2 resolve finished
+2022-02-28 08:16:55 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_dict_to_sm HTTP/1.1" 200 64
+2022-02-28 08:16:55 [root] INFO: 3 resolve finished
+2022-02-28 08:16:55 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/add_dict_to_sm HTTP/1.1" 200 64
+2022-02-28 08:16:55 [root] INFO: 4 resolve finished
+2022-02-28 08:16:56 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/chtml_query_by_spider_id HTTP/1.1" 200 17
+2022-02-28 08:16:56 [root] INFO: no data to resolve
+2022-02-28 08:16:56 [scrapy.core.engine] INFO: Closing spider ({'istrue_end': 'true', 'status': 2, 'result': '本段结束'})
+2022-02-28 08:16:56 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/uuid HTTP/1.1" 200 27
+2022-02-28 08:16:56 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/chis_add HTTP/1.1" 200 15
+2022-02-28 08:16:56 [urllib3.connectionpool] DEBUG: http://172.26.52.92:8899 "POST /databaseOperate/sas_update_spider_await_status HTTP/1.1" 200 15
+2022-02-28 08:16:56 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 7454,
+ 'downloader/request_count': 22,
+ 'downloader/request_method_count/GET': 22,
+ 'downloader/response_bytes': 390727,
+ 'downloader/response_count': 22,
+ 'downloader/response_status_count/200': 21,
+ 'downloader/response_status_count/405': 1,
+ 'elapsed_time_seconds': 59.137328,
+ 'finish_reason': {'istrue_end': 'true', 'result': '本段结束', 'status': 2},
+ 'finish_time': datetime.datetime(2022, 2, 28, 0, 16, 56, 725744),
+ 'log_count/DEBUG': 113,
+ 'log_count/INFO': 21,
+ 'memusage/max': 65957888,
+ 'memusage/startup': 65957888,
+ 'response_received_count': 21,
+ 'scheduler/dequeued/redis': 22,
+ 'scheduler/enqueued/redis': 22,
+ 'start_time': datetime.datetime(2022, 2, 28, 0, 15, 57, 588416)}
+2022-02-28 08:16:56 [scrapy.core.engine] INFO: Spider closed ({'istrue_end': 'true', 'status': 2, 'result': '本段结束'})
